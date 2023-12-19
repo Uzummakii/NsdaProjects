@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/resPersonCIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        tools:ignore="MissingClass,MissingConstraints">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+    <TextView
+        android:id="@+id/resUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="username"
+        android:padding="10sp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/resPersonCIV"
+        app:layout_constraintStart_toStartOf="@+id/resPersonCIV"
+        app:layout_constraintTop_toBottomOf="@+id/resPersonCIV"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="name"
+        android:padding="10sp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/resUsername"
+        app:layout_constraintStart_toStartOf="@+id/resUsername"
+        app:layout_constraintTop_toBottomOf="@+id/resUsername"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="age"
+        android:padding="10sp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/resName"
+        app:layout_constraintStart_toStartOf="@+id/resName"
+        app:layout_constraintTop_toBottomOf="@+id/resName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="email"
+        android:padding="10sp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/resAge"
+        app:layout_constraintStart_toStartOf="@+id/resAge"
+        app:layout_constraintTop_toBottomOf="@+id/resAge"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="pass"
+        android:padding="10sp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/resEmail"
+        app:layout_constraintStart_toStartOf="@+id/resEmail"
+        app:layout_constraintTop_toBottomOf="@+id/resEmail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10sp"
+        android:text="address"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/resPass"
+        app:layout_constraintStart_toStartOf="@+id/resPass"
+        app:layout_constraintTop_toBottomOf="@+id/resPass"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
